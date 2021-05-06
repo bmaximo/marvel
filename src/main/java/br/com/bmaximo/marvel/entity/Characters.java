@@ -19,11 +19,6 @@ public class Characters implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
-//	comics	ResourceList	A resource list containing comics which feature this character.
-//	stories	ResourceList	A resource list of stories in which this character appears.
-//	events	ResourceList	A resource list of events in which this character appears.
-//	series	ResourceList	A resource list of series in which this character appears.
-//	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
