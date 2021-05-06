@@ -28,25 +28,6 @@ private static final long serialVersionUID = 1L;
 	private String type;
 	
 	private Date modified;
-	
-//	@ManyToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-//	@JoinTable(name = "rl_characters_stories", 
-//	joinColumns = @JoinColumn(name = "storieId"), 
-//	inverseJoinColumns = @JoinColumn(name = "characterId"))
-//	private List<Characters> characters;
-	
-//	comics	ComicList	A resource list containing comics in which this story takes place.
-//	series	SeriesList	A resource list containing series in which this story appears.
-//	events	EventList	A resource list of the events in which this story appears.
-
-
-//	public List<Characters> getCharacters() {
-//		return characters;
-//	}
-//
-//	public void setCharacters(List<Characters> characters) {
-//		this.characters = characters;
-//	}
 
 	public Integer getId() {
 		return id;

@@ -13,12 +13,6 @@ import javax.persistence.Table;
 @Table(name = "comics")
 public class Comics implements Serializable {
 	
-//	creators	ResourceList	A resource list containing the creators associated with this comic.
-//	characters	ResourceList	A resource list containing the characters which appear in this comic.
-//	stories	ResourceList	A resource list containing the stories which appear in this comic.
-//	events	ResourceList	A resource list containing the events in which this comic appears.
-	
-	
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -55,20 +49,6 @@ public class Comics implements Serializable {
 	
 	private String resourceURI;
 	
-//	@ManyToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-//	@JoinTable(name = "rl_characters_comics", 
-//	joinColumns = @JoinColumn(name = "comicId"), 
-//	inverseJoinColumns = @JoinColumn(name = "characterId"))
-//	private List<Characters> characters;
-//
-//	public List<Characters> getCharacters() {
-//		return characters;
-//	}
-//
-//	public void setCharacters(List<Characters> characters) {
-//		this.characters = characters;
-//	}
-
 	public Integer getId() {
 		return id;
 	}

@@ -30,26 +30,6 @@ public class Events implements Serializable {
 	private Date start;
 	
 	private Date end;
-	
-//	@ManyToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-//	@JoinTable(name = "rl_characters_events", 
-//	joinColumns = @JoinColumn(name = "eventId"), 
-//	inverseJoinColumns = @JoinColumn(name = "characterId"))
-//	private List<Characters> characters;
-//	
-//	
-////	comics	ResourceList	A resource list containing the comics in this event.
-////	stories	ResourceList	A resource list containing the stories in this event.
-////	series	ResourceList	A resource list containing the series in this event.
-////	creators	ResourceList	A resource list containing creators whose work appears in this event.
-//	
-//	public List<Characters> getCharacters() {
-//		return characters;
-//	}
-//
-//	public void setCharacters(List<Characters> characters) {
-//		this.characters = characters;
-//	}
 
 	public Integer getId() {
 		return id;

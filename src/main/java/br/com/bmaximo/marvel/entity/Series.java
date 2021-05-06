@@ -33,18 +33,6 @@ public class Series implements Serializable {
 	
 	private Date modified;
 	
-//	@ManyToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-//	@JoinTable(name = "rl_characters_series", 
-//	joinColumns = @JoinColumn(name = "serieId"), 
-//	inverseJoinColumns = @JoinColumn(name = "characterId"))
-//	private List<Characters> characters;
-	
-//	comics	ResourceList	A resource list containing comics in this series.
-//	stories	ResourceList	A resource list containing stories which occur in comics in this series.
-//	events	ResourceList	A resource list containing events which take place in comics in this series.
-//	characters	ResourceList	A resource list containing characters which appear in comics in this series.
-//	creators	ResourceList	A resource list of creators whose work appears in comics in this series.
-
 	public Integer getId() {
 		return id;
 	}
