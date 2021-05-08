@@ -8,7 +8,7 @@
 - Para execurtar os testes basta digitar no seu terminal o comando 'mvnw test' ou 'mvnw.cmd test';
 - Quando o o build do projeto estiver pronto os endpoits podem ser acessado por http://localhost:8080 + endpoint
 
-### Enpoints
+### Endpoints
 * `/v1/public/characters`
 * `/v1/public/characters/{characterId}`
 * `/v1/public/characters/{characterId}/comics`
