@@ -30,7 +30,7 @@ public class Events implements Serializable {
 	private Date start;
 	
 	private Date end;
-
+	
 	public Integer getId() {
 		return id;
 	}

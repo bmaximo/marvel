@@ -1,9 +1,11 @@
 package br.com.bmaximo.marvel.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -33,29 +35,29 @@ public class Characters implements Serializable{
 	
 	private String thumbnail;
 	
-	@ManyToMany
+	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "characters_comics", 
 	joinColumns = @JoinColumn(name = "characterId"), 
 	inverseJoinColumns = @JoinColumn(name = "comicId"))
-	private List<Comics> comics;
+	private List<Comics> comics = new ArrayList<Comics>();
 	
-	@ManyToMany
+	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "characters_stories", 
 	joinColumns = @JoinColumn(name = "characterId"), 
-	inverseJoinColumns = @JoinColumn(name = "storieId"))
-	private List<Stories> stories;
+	inverseJoinColumns = @JoinColumn(name = "storiesId"))
+	private List<Stories> stories = new ArrayList<Stories>();
 	
-	@ManyToMany
+	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "characters_events", 
 	joinColumns = @JoinColumn(name = "characterId"), 
 	inverseJoinColumns = @JoinColumn(name = "eventId"))
-	private List<Events> events;
+	private List<Events> events = new ArrayList<Events>();
 	
-	@ManyToMany
+	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "characters_series", 
 	joinColumns = @JoinColumn(name = "characterId"), 
 	inverseJoinColumns = @JoinColumn(name = "serieId"))
-	private List<Series> series;
+	private List<Series> series = new ArrayList<Series>();
 
 	public Integer getId() {
 		return id;
